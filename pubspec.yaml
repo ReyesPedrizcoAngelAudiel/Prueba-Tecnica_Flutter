@@ -1,0 +1,23 @@
+name: app_carvel
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  cupertino_icons: ^1.0.2 # For iOS style icons
+  provider: ^6.0.5        # Para manejar el estado de la app
+  http: any               # Cualquier version de http
+
+flutter:
+  uses-material-design: true
