@@ -46,6 +46,10 @@ class _InformScreenState extends State<InformScreen> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.tealAccent),
+        title: Text(
+          "Elaborado por © Angel Audiel Reyes Pedrizco",
+          style: TextStyle(color: Colors.tealAccent),
+        ),
         backgroundColor: Colors.black,
       ),
       body:

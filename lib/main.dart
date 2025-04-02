@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';               //Material Design Library
+import 'package:flutter/material.dart';                 //Material Design Library
 // ignore: depend_on_referenced_packages
 import 'package:provider/provider.dart';                //Para manejar el estado de la app
 import 'package:app_carvel/providers/personajes.dart';  //Para manejar los personajes

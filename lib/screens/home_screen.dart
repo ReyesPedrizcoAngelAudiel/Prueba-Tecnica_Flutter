@@ -76,10 +76,11 @@ class _HomePageState extends State<HomePage> {
     final personajes = personajesProvider.personajes;
 
     return Scaffold(
-      backgroundColor: Colors.black,                  // ? Fondo negro
-      appBar: _buildAppBar(),                           // ? Barra de navegación superior
-      body: _buildBody(personajes),                     // ? Cuerpo
-      bottomNavigationBar: _buildBottomNavigationBar(), // ? Barra de navegación inferior
+      backgroundColor: Colors.black, // ? Fondo negro
+      appBar: _buildAppBar(), // ? Barra de navegación superior
+      body: _buildBody(personajes), // ? Cuerpo
+      bottomNavigationBar:
+          _buildBottomNavigationBar(), // ? Barra de navegación inferior
     );
   }
 
@@ -154,17 +155,15 @@ class _HomePageState extends State<HomePage> {
         int crossAxisCount = 1; // Por defecto | Celulares
 
         if (constraints.maxWidth > 600) {
-          crossAxisCount = 2;   // Tablets
+          crossAxisCount = 2; // Tablets
         }
         if (constraints.maxWidth > 900) {
-          crossAxisCount = 4;   // Escritorios
+          crossAxisCount = 4; // Escritorios
         }
 
         return Stack(
           children: [
-            Positioned.fill(
-              child: Container(color: Colors.black),
-            ),
+            Positioned.fill(child: Container(color: Colors.black)),
             GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: crossAxisCount,
@@ -270,33 +269,45 @@ class _HomePageState extends State<HomePage> {
 
   // ! Barra de navegación inferior
   Widget _buildBottomNavigationBar() {
-    return Container(
-      padding: EdgeInsets.all(7.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          if (paginaActual > 1)
-            TextButton(
-              onPressed: () => _cambiarPagina(paginaActual - 1),
-              child: Text(
-                "Anterior",
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Container(
+          padding: EdgeInsets.all(7.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              if (paginaActual > 1)
+                TextButton(
+                  onPressed: () => _cambiarPagina(paginaActual - 1),
+                  child: Text(
+                    "Anterior",
+                    style: TextStyle(color: Colors.tealAccent),
+                  ),
+                ),
+              Text(
+                "Página $paginaActual",
                 style: TextStyle(color: Colors.tealAccent),
               ),
-            ),
-          Text(
-            "Página $paginaActual",
-            style: TextStyle(color: Colors.tealAccent),
+              if (paginaActual < 42)
+                TextButton(
+                  onPressed: () => _cambiarPagina(paginaActual + 1),
+                  child: Text(
+                    "Siguiente",
+                    style: TextStyle(color: Colors.tealAccent),
+                  ),
+                ),
+            ],
           ),
-          if (paginaActual < 42)
-            TextButton(
-              onPressed: () => _cambiarPagina(paginaActual + 1),
-              child: Text(
-                "Siguiente",
-                style: TextStyle(color: Colors.tealAccent),
-              ),
-            ),
-        ],
-      ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(bottom: 10.0),
+          child: Text(
+            "Elaborado por © Angel Audiel Reyes Pedrizco",
+            style: TextStyle(color: Colors.white70, fontSize: 14),
+          ),
+        ),
+      ],
     );
   }
 }
