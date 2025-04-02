@@ -30,6 +30,9 @@
 >- 📋 Vizualisacion de personajes por paginas.
 
 # 💡 Instalación
+> ### Opcion #1 - Clona el proyecto con el comando:
+> gh repo clone ReyesPedrizcoAngelAudiel/Prueba-Tecnica_Flutter
+> ### Opcion #2 - Descarga el .zip
 ---
 > ### Necesitas tener Flutter instalado
 > #### Documentacion de Flutter:
