@@ -74,7 +74,7 @@
 
 # 🎥 Video de funcionamiento
 ---
-> [🎦 Ver en youtube el proyecto](https://docs.flutter.dev/get-started/install/windows/mobile)
+> [🎦 Ver en youtube el proyecto]([https://docs.flutter.dev/get-started/install/windows/mobile](https://youtu.be/Oewj2wgLxS4))
 
 ---
 ###### 🌟 ¡Gracias por revisar este proyecto! 
