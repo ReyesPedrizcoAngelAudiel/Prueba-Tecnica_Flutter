@@ -29,7 +29,7 @@
 >- 🪄 Filtrado de personajes por Genero y Estado
 >- 📋 Vizualisacion de personajes por paginas.
 
-#### 💡 Instalación
+# 💡 Instalación
 ---
 > ### Necesitas tener Flutter instalado
 > #### Documentacion de Flutter:
@@ -60,7 +60,7 @@
 >- ![](/Cosas_Readme/resultado_final.jpg)
 >#### 🎉 Entonces la instalacion ha sido exitosa 🎉
 
-#### 🤔 ¿Cómo ejecutar la App?
+# 🤔 ¿Cómo ejecutar la App?
 ---
 #### En visual studio code ejecutar: Ctrl + Shift + P
 >- Da enter en "Emulador" y despues en "View Android emulators"
@@ -72,7 +72,7 @@
 ### 🎉 Listo, hemos cargado el programa 🎉
 >- ![](/Cosas_Readme/ejectuar_final.jpg)
 
-#### 🎥 Video de funcionamiento
+# 🎥 Video de funcionamiento
 ---
 > [🎦 Ver en youtube el proyecto](https://docs.flutter.dev/get-started/install/windows/mobile)
 
